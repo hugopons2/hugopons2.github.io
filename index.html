@@ -204,7 +204,7 @@
       display: block;
       width: 180px;
       height: 2.5px;
-      margin: -7px auto 0;
+      margin: -9px auto 0;
       background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
       border-radius: 10px;
     }
@@ -266,7 +266,7 @@
     .center-title h1 {
       font-size: 3rem;
       font-weight: 600;
-      margin-bottom: 0px;
+      margin-bottom: -14px;
       background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -309,7 +309,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       border-bottom: 2.4px solid #64b5f6;
-      padding-bottom: 0px;
+      padding-bottom: -50000px;
       width: fit-content;
     }
 
@@ -369,7 +369,7 @@
       display: block;
       width: 100%;
       height: 2px;
-      margin-top: 1px;
+      margin-top: -7px;
       background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
       border-radius: 10px;
     }
@@ -646,11 +646,146 @@
       border-radius: 20px;
       overflow: hidden;
       transition: 0.3s;
+      cursor: pointer;
     }
     .compl-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       border-color: #b0c4de;
+    }
+
+    /* ========================
+       PAGE REPORTING (fiche projet)
+    ======================== */
+    .wrapper-reporting {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding-top: 110px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+    .container-reporting {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      padding: 50px;
+      border-radius: 25px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    .reporting-title-wrap {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .reporting-title-wrap-inner {
+      display: inline-block;
+    }
+    .reporting-title {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .reporting-title-underline {
+      display: block;
+      height: 2.5px;
+      margin: 2px 0 0;
+      background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
+      border-radius: 10px;
+      width: 100%;
+    }
+    .reporting-section-box {
+      margin: 25px 0;
+      padding: 22px 26px;
+      border: 2px solid #ddd;
+      border-radius: 20px;
+    }
+    .reporting-section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 14px;
+    }
+    .reporting-section-label .r-icon {
+      font-size: 1.2rem;
+      -webkit-text-stroke: 0.4px black;
+      filter: drop-shadow(0.5px 0 black) drop-shadow(-0.5px 0 black);
+    }
+    .r-heart-icon {
+      font-size: 1.2rem;
+      color: #e53935;
+      -webkit-text-fill-color: #e53935;
+      -webkit-text-stroke: 0px;
+      filter: none;
+    }
+    .reporting-smiley-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .reporting-smiley-static {
+      font-size: 1.8rem;
+      user-select: none;
+      pointer-events: none;
+    }
+    .reporting-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, #81c784, #64b5f6);
+      color: white;
+      margin-right: 8px;
+      margin-top: 6px;
+    }
+    .reporting-item-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .reporting-item-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .r-bullet-heart { color: #e91e63; font-size: 1.1rem; }
+    .r-bullet-cross  { color: #e53935; font-size: 1.1rem; font-weight: 700; }
+    .reporting-center {
+      text-align: center;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-reporting-retour {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #64b5f6, #ba68c8);
+      color: white;
+      cursor: pointer;
+      transition: .3s;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+    .btn-reporting-retour:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.2);
     }
     .compl-card-label {
       display: flex;
@@ -705,7 +840,7 @@
       display: inline-block;
       font-size: 2.8rem;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: -22px;
       background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -727,7 +862,7 @@
       -webkit-text-fill-color: transparent;
     }
     .sae-semester-line {
-      width: 100%; height: 3.5px; margin: 1px auto 0;
+      width: 100%; height: 2.4px; margin: -6px auto 0;
       border-radius: 20px;
       background: linear-gradient(90deg, #81c784, #64b5f6, #ba68c8);
     }
@@ -1119,15 +1254,27 @@
   </div>
 
   <script>
-    function showPage(id) {
+    // Mémorise la position de scroll pour chaque page
+    const savedScrollPositions = {};
+
+    function showPage(id, restoreScroll) {
       const el = document.getElementById(id);
       el.classList.remove('invisible');
       el.getBoundingClientRect(); // force reflow
       el.classList.remove('hidden');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (restoreScroll && savedScrollPositions[id] !== undefined) {
+        // Restaure la position après que la page soit visible
+        setTimeout(() => {
+          window.scrollTo({ top: savedScrollPositions[id], behavior: 'instant' });
+        }, 10);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
 
     function hidePage(id, callback) {
+      // Sauvegarde la position de scroll avant de quitter la page
+      savedScrollPositions[id] = window.scrollY;
       const el = document.getElementById(id);
       el.classList.add('hidden');
       setTimeout(() => {
@@ -1174,6 +1321,15 @@
     // Navigation Compléments Visuels S2
     function afficherComplementsS2() { hidePage('page-but1-projets', () => showPage('page-complements-s2')); }
     function retourDepuisComplementsS2() { hidePage('page-complements-s2', () => showPage('page-but1-projets')); }
+
+    // ─── Navigation fiches reporting statiques ───────────────────────────────
+    function afficherReporting(pageReportingId, pageOrigineId) {
+      hidePage(pageOrigineId, () => showPage(pageReportingId));
+    }
+
+    function retourDepuisReporting(pageReportingId, pageOrigineId) {
+      hidePage(pageReportingId, () => showPage(pageOrigineId, true));
+    }
     function retourMenu()      {
       const fromContacts  = !document.getElementById('page-contacts').classList.contains('invisible');
       const fromApropos   = !document.getElementById('page-apropos').classList.contains('invisible');
@@ -1256,32 +1412,32 @@
 
       <div class="complements-grid">
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-0', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Présentation d'un territoire économique et culturel</div>
           <img src="preuve sae territoire 1.png" alt="SAE 1" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-1', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Apprendre en situation la production de données en entreprise</div>
           <img src="preuve sae production donnees entreprise.png" alt="SAE 2" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-2', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Ecriture et lecture de fichiers de données</div>
           <img src="preuve sae gestion fichiers.png" alt="SAE 3" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-3', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Création d'un reporting</div>
           <img src="preuve sae reporting.png" alt="SAE 4" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-4', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Mise en oeuvre d'une enquête</div>
           <img src="preuve sae enquete.png" alt="SAE 5" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s1-5', 'page-complements-s1')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Préparation et synthèse d'un tableau de données en vue d'une analyse exploratoire simple</div>
           <img src="preuve sae exploratoire.png" alt="SAE 6" class="compl-card-img">
         </div>
@@ -1303,32 +1459,32 @@
 
       <div class="complements-grid">
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-0', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Conception et implémentation d'une base de données</div>
           <img src="preuve sae bd.png" alt="SAE 1" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-1', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Estimation par échantillonnage</div>
           <img src="preuve sae echantillon 2.png" alt="SAE 2" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-2', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Régression sur des données réelles</div>
           <img src="preuve sae regression 2.png" alt="SAE 3" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-3', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Datavisualisation (challenge national)</div>
           <img src="preuve sae dataviz 2.png" alt="SAE 4" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-4', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Construction et présentation d'indicateurs de performance</div>
           <img src="preuve sae kpi.png" alt="SAE 5" class="compl-card-img">
         </div>
 
-        <div class="compl-card">
+        <div class="compl-card" onclick="afficherReporting('page-reporting-s2-5', 'page-complements-s2')">
           <div class="compl-card-label"><span class="compl-star">✦</span> Analyse de données, reporting et datavisualisation</div>
           <img src="preuve sae finale 1.png" alt="SAE 6" class="compl-card-img">
         </div>
@@ -1540,6 +1696,478 @@
         <button class="btn-sae-retour" onclick="retourDepuisSaeS2()">Retour</button>
       </div>
 
+    </div>
+  </div>
+
+  <!-- ===================== PAGES REPORTING — S1 ===================== -->
+
+  <!-- S1 — SAE 1 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-0">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Territoire économique et culturel</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😄</span><span class="reporting-badge">Facile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">PowerPoint</span><span class="reporting-badge">Word</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>La liberté créative dans la mise en forme</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Une ouverture d'esprit plus large sur les villes françaises et les villes jumelées</span></li>
+		   <li><span class="r-bullet-heart">—</span><span>Un esprit critique renforcé (ex : infos fiables ?)</span></li>
+		   <li><span class="r-bullet-heart">—</span><span>Découverte de traditions, cultures et gatsronomies très diverses</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Trouver des données fiables et pertinentes</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Synthétiser un volume important d'informations</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Passage à l'oral contrasté en raison de ma timidité naturelle</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Communication "bancale" et pas très fluide entre les membres du groupe</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Manque de cohésion et de coordination entre nous</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-0','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S1 — SAE 2 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-1">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Production de données en entreprise</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen à difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Excel</span><span class="reporting-badge">Word</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>La mise en situation professionnelle réelle avec de vraies données (test significatif)</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Comprendre des tendances en France sur divers aspects(ex : natalité)</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Cohésion d'équipe renforcée et soutenue</span></li>
+		   <li><span class="r-bullet-heart">—</span><span>Curiosité et ouverture d'esprit accrue</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Trouver des solutions qui conviennent à tout le monde sur certaines choses</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Gérer les données manquantes et incohérentes</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Grosse volumétrie de données brutes et complexes (compliqué à gérer)</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Sélection des informations les plus accrocheuses et pertinentes pour notre étude</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-1','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S1 — SAE 3 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-2">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Ecriture et lecture de fichiers de données</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-9px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen à difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Python</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Développer nos compétences en langage Python</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Apprendre à rendre des fichiers exploitables et plus lisibles</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Comprendre l'importance du nettoyage, filtrage, et de la compréhension des données</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Ecrire un code fonctionnel, non redondant, cohérent et logique</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Automatiser les traitements répétitifs</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Grosse difficulté à réaliser un tel projet info, surtout quand on n'a jamais programmer</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-2','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S1 — SAE 4 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-3">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Création d'un reporting</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😟</span><span class="reporting-badge">Très difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Excel</span><span class="reporting-badge">VBA</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Découverte de l'univers informatique VBA</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Comprendre comment mettre en relation VBA et Excel</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Créer un tableau de bord visuel charmant, accompagné d'une interface VBA fonctionnelle</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Difficulté à relier (regrouper) le tableau de bord Excel avec l'interface VBA</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Grosse difficulté à comprendre le sujet et comment s'y prendre pour réaliser ce projet</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Passage à l'oral complexe dû à un sujet très vaste et flou pour nous</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Fort sentiment de lassitude de venir et de faire toujours la même chose</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Sentiment d'impuissance vis-à-vis d'un travail presque impossible à réaliser pour nous</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-3','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S1 — SAE 5 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-4">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Mise en oeuvre d'une enquête</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Canva</span><span class="reporting-badge">Word</span><span class="reporting-badge">Sphinx</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+		  <li><span class="r-bullet-heart">—</span><span>Comprendre comment on s'y prend pour réaliser une vraie enquête</span></li>
+          <li><span class="r-bullet-heart">—</span><span>La conception et la construction du questionnaire</span></li>
+          <li><span class="r-bullet-heart">—</span><span>L'analyse, l'interprétation et la conclusion de l'ensemble des résultats collectés</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Développer nos compétences sur Sphinx</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Manque de temps pour faire l'intégralité du travail demandé</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Des tests pas forcément significatifs et pertinents pour en faire une généralité</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-4','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S1 — SAE 6 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s1-5">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Analyse exploratoire simple</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Canva</span><span class="reporting-badge">Word</span><span class="reporting-badge">Sphinx</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Analyser les étudiants et leur rapport au téléphone portable (exemple très parlant)</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Visualiser des tendances assez visibles et claires chez les étudiants</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Etudier plusieurs variables diverses entre elles pour voir un potentiel lien</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Réaliser un tableau de bord visuel organisé et cohérent</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Eviter la redondance de l'information entre le tableau de bord et le compte-rendu final</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Trouver des relations significatives entre les différentes variables étudiées</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Choisir les résultats les plus pertinents à mettre en avant</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s1-5','page-complements-s1')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- ===================== PAGES REPORTING — S2 ===================== -->
+
+  <!-- S2 — SAE 1 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-0">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Conception et implémentation d'une BDR</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😟</span><span class="reporting-badge">Très difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">EasyPHP</span><span class="reporting-badge">MySQL</span><span class="reporting-badge">Python (TKinter)</span><span class="reporting-badge">Looping_MCD</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>La logique de modéliser des relations entre différentes tables</span></li>
+          <li><span class="r-bullet-heart">—</span><span>La satisfaction de voir l'interface TKinter fonctionner</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Avoir une certaine liberté de choisir des requêtes SQL pertinentes</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Laisser libre court à notre imagination et à notre créativité</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Concevoir un modèle conceptuel cohérent et fonctionnel</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Gérer les contraintes d'intégrité référentielle</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Entrer les requêtes SQL dans EasyPHP sans erreur</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Très grosse volumétrie de données à gérer</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Créer l'interface TKinter sans bug et sans erreur</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Le nettoyage, filtrage et la compréhension des données mises à disposition</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Fort sentiment de lassitude de venir et de faire toujours la même chose</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Sentiment d'impuissance vis-à-vis d'un travail presque impossible à réaliser pour nous</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-0','page-complements-s2')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S2 — SAE 2 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-1">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Estimation par échantillonnage</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😟</span><span class="reporting-badge">Difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">R</span><span class="reporting-badge">Word</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>La liberté et la créativité lors de la rédaction du rapport</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Renforcer les acquis en statistique inférentielle dans un contexte concret et parlant</span></li>
+		   <li><span class="r-bullet-heart">—</span><span>Utilisation de R pour automatiser les calculs complexes et redondants</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Rédiger un rapport avec beaucoup d'informations et le plus complet possible</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Interpréter les résultats correctement en fonction de la situation</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Réécrire à plusieurs reprises le code R en raison d'erreurs ou de manque d'informations </span></li>
+		  <li><span class="r-bullet-cross">—</span><span>être en communication permanente pour éviter l'ambiguïté et les oublis dans le rapport </span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Fort sentiment de lassitude de venir et de toujours faire une même chose trop complexe</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-1','page-complements-s2')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S2 — SAE 3 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-2">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Régression sur des données réelles</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen à difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">R</span><span class="reporting-badge">Word</span><span class="reporting-badge">Excel</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Travailler avec des données du marché de l'immobilier niortais (contexte parlant et local)</span></li>
+          <li><span class="r-bullet-heart">—</span><span>La richesse des modèles présents et utilisables dans le cadre du projet</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Vérifier les hypothèses de chaque modèle</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Gérer et trouver des relations parlantes et cohérentes entre des variables assez diverses</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Gérer les valeurs manquantes ou incohérentes</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Comparer/tester plusieurs fois chaque modèle en trouvant le plus adapté à chaque cas</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Trouver plusieurs segmentations pertinentes et cohérentes</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-2','page-complements-s2')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S2 — SAE 4 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-3">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Datavisualisation (challenge national)</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😐</span><span class="reporting-badge">Moyen</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">R</span><span class="reporting-badge">Canva</span><span class="reporting-badge">PowerPoint</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Toute la liberté et la créativité permise par la dataviz pour réaliser une infographie charmante</span></li>
+          <li><span class="r-bullet-heart">—</span><span>La compétition nationale stimulante pour nous pousser à devenir les meilleurs et à gagner</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Travailler sur des données INSEE réelles, donc concrètes et plus parlantes</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Arriver à rendre les données accessibles et compréhensibles pour tous les publics</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Manque de temps pour faire un travail plus sophistiqué et propre</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Trouver une problématique spéciale, parlante et unique pour nous démarquer</span></li>
+		   <li><span class="r-bullet-cross">—</span><span>Réaliser des graphiques variés, pertinents et accrocheurs</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-3','page-complements-s2')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S2 — SAE 5 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-4">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Construction et présentation de KPIs</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😟</span><span class="reporting-badge">Difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Excel</span><span class="reporting-badge">Word</span><span class="reporting-badge">Power BI Desktop</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>Appliquer mes connaissances en Economie-Gestion à un réel cas d'analyse d'entreprise</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Comprendre et étudier le fonctionnement réel d'une entreprise (bilans, comptes de résultats...)</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Interpréter correctement les données afin de mieux évaluer la performance d'une entreprise</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Aider au mieux les dirigeants à prendre la décision finale</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Sélectionner les KPIs les plus pertinents et parlants en fonction du contexte</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Rendre les KPIs compréhensibles pour tous</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Calculs parfois très redondants</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Choisir les bons graphiques</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-4','page-complements-s2')">Retour</button></div>
+    </div>
+  </div>
+
+  <!-- S2 — SAE 6 -->
+  <div class="wrapper-reporting page invisible" id="page-reporting-s2-5">
+    <div class="container-reporting">
+      <div class="reporting-title-wrap">
+        <div class="reporting-title-wrap-inner">
+          <span class="reporting-title">Analyse de données, Reporting, Dataviz</span>
+          <span class="reporting-title-underline" style="display:block;height:2.5px;margin:-10px auto 0;background:linear-gradient(90deg,#81c784,#64b5f6,#ba68c8);border-radius:10px;"></span>
+        </div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">📊</span> ➜ Niveau de difficulté</div>
+        <div class="reporting-smiley-row"><span class="reporting-smiley-static">😟</span><span class="reporting-badge">Très difficile</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">🛠️</span> ➜ Outils utilisés</div>
+        <div><span class="reporting-badge">Word</span><span class="reporting-badge">Python</span><span class="reporting-badge">HTML/CSS</span><span class="reporting-badge">Excel</span><span class="reporting-badge">PowerPoint</span><span class="reporting-badge">CapCut</span></div>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-heart-icon">❤️</span> ➜ Ce que j'ai aimé</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-heart">—</span><span>La diversité des compétences et outils mobilisés (liberté et créativité dans notre travail)</span></li>
+          <li><span class="r-bullet-heart">—</span><span>Le challenge de présenter ses résultats en anglais</span></li>
+		  <li><span class="r-bullet-heart">—</span><span>Réaliser ce projet avec un Scrum Master, une nouvelle façon de faire</span></li>
+        </ul>
+      </div>
+      <div class="reporting-section-box">
+        <div class="reporting-section-label"><span class="r-icon">✖️</span> ➜ Les difficultés rencontrées</div>
+        <ul class="reporting-item-list">
+          <li><span class="r-bullet-cross">—</span><span>Combiner/mettre en relation plusieurs outils différents dans un même projet</span></li>
+          <li><span class="r-bullet-cross">—</span><span>Gérer la complexité du jeu de données (nettoyage, filtrage, interprétation...)</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Présenter à l'oral un projet vaste et complexe en langues étrangères</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Gérer ce projet avec une méthode inédite : la méthodologie SCRUM</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Fort sentiment de lassitude de venir et de faire souvent les mêmes choses</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Communication pas très fluide et complexe au sein du groupe</span></li>
+		  <li><span class="r-bullet-cross">—</span><span>Difficultés à se mettre d'accord sur les outils que nous allions utiliser pour ce projet</span></li>
+        </ul>
+      </div>
+      <div class="reporting-center"><button class="btn-reporting-retour" onclick="retourDepuisReporting('page-reporting-s2-5','page-complements-s2')">Retour</button></div>
     </div>
   </div>
 
